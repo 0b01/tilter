@@ -8,7 +8,38 @@
 import UIKit
 import CoreMotion
 
-class InformationViewController: UIViewController, CMHeadphoneMotionManagerDelegate {
+import Foundation
+import Network
+
+class Browser {
+
+    let browser: NWBrowser
+
+    init() {
+        let parameters = NWParameters()
+        parameters.includePeerToPeer = true
+
+        browser = NWBrowser(for: .bonjour(type: "_myitem._tcp", domain: nil), using: parameters)
+    }
+
+    func start(handler: @escaping (NWBrowser.Result) -> Void) {
+        browser.stateUpdateHandler = { newState in
+            print("browser.stateUpdateHandler \(newState)")
+        }
+        browser.browseResultsChangedHandler = { results, changes in
+            for result in results {
+                if case NWEndpoint.service = result.endpoint {
+                    handler(result)
+                }
+                
+                break
+            }
+        }
+        browser.start(queue: .main)
+    }
+}
+
+class RemoteController: UIViewController, CMHeadphoneMotionManagerDelegate {
 
     lazy var textView: UITextView = {
         let view = UITextView()
@@ -21,19 +52,17 @@ class InformationViewController: UIViewController, CMHeadphoneMotionManagerDeleg
         return view
     }()
     
-    
-    
-    //AirPods Pro => APP :)
     let APP = CMHeadphoneMotionManager()
-    
-    
+    let browser = Browser()
+    var connection: NWConnection?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Information View"
         view.backgroundColor = .systemBackground
         view.addSubview(textView)
         
-        
+
         APP.delegate = self
         
         guard APP.isDeviceMotionAvailable else {
@@ -42,10 +71,27 @@ class InformationViewController: UIViewController, CMHeadphoneMotionManagerDeleg
             return
         }
         
+        browser.start { [weak self] result in
+            print("starting: ", result.endpoint.debugDescription)
+            let tcpOptions = NWProtocolTCP.Options()
+            tcpOptions.enableKeepalive = true
+            tcpOptions.keepaliveIdle = 2
+
+            let parameters = NWParameters(tls: nil, tcp: tcpOptions)
+            parameters.includePeerToPeer = true
+            self?.connection = NWConnection(to: result.endpoint, using: parameters)
+            self?.connection?.start(queue: .main)
+        }
+        
         APP.startDeviceMotionUpdates(to: OperationQueue.current!, withHandler: {[weak self] motion, error  in
             guard let motion = motion, error == nil else { return }
             self?.printData(motion)
             self?.textView.transform = CGAffineTransform(rotationAngle: motion.attitude.yaw)
+//            self?.connection.
+            let message = String(format:"%f,%f,%f;", motion.attitude.roll, motion.attitude.pitch, motion.attitude.yaw)
+            self?.connection?.send(content: message.data(using: .utf8), contentContext: .defaultMessage, isComplete: true, completion: .contentProcessed({ error in
+                // log("Connection send error: \(String(describing: error))")
+            }))
         })
     }
     
@@ -59,7 +105,7 @@ class InformationViewController: UIViewController, CMHeadphoneMotionManagerDeleg
     
     
     func printData(_ data: CMDeviceMotion) {
-        print(data)
+        // print(data)
         self.textView.text = """
             Quaternion:
                 x: \(data.attitude.quaternion.x)

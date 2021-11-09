@@ -18,7 +18,34 @@
 		8EB3738B2527649700B9B3C0 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3738A2527649700B9B3C0 /* TopViewController.swift */; };
 		8ED747C226E268C500EDE5FB /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED747C126E268C500EDE5FB /* Extension+ViewController.swift */; };
 		8EF9EA05251B690C00D239C4 /* SK3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF9EA04251B690C00D239C4 /* SK3DViewController.swift */; };
+		E40ACE25273A653B00B4FFCE /* RemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40ACE24273A653B00B4FFCE /* RemoteController.swift */; };
+		E40ACE2E273A671400B4FFCE /* HeadTiltServerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40ACE2D273A671400B4FFCE /* HeadTiltServerApp.swift */; };
+		E40ACE30273A671400B4FFCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40ACE2F273A671400B4FFCE /* ContentView.swift */; };
+		E40ACE32273A671500B4FFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E40ACE31273A671500B4FFCE /* Assets.xcassets */; };
+		E40ACE35273A671500B4FFCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E40ACE34273A671500B4FFCE /* Preview Assets.xcassets */; };
+		E40ACE40273A671500B4FFCE /* HeadTiltServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40ACE3F273A671500B4FFCE /* HeadTiltServerTests.swift */; };
+		E40ACE4A273A671500B4FFCE /* HeadTiltServerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40ACE49273A671500B4FFCE /* HeadTiltServerUITests.swift */; };
+		E40ACE4C273A671500B4FFCE /* HeadTiltServerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40ACE4B273A671500B4FFCE /* HeadTiltServerUITestsLaunchTests.swift */; };
+		E40ACE57273A674D00B4FFCE /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40ACE56273A674D00B4FFCE /* Server.swift */; };
+		E40ACE5A273A73B100B4FFCE /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40ACE59273A73B100B4FFCE /* Connection.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E40ACE3C273A671500B4FFCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E4A85CD251A37600077CDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E40ACE2A273A671400B4FFCE;
+			remoteInfo = HeadTiltServer;
+		};
+		E40ACE46273A671500B4FFCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E4A85CD251A37600077CDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E40ACE2A273A671400B4FFCE;
+			remoteInfo = HeadTiltServer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8E4A7F8C255AF88100CC0C2D /* ExportCSVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportCSVViewController.swift; sourceTree = "<group>"; };
@@ -34,10 +61,46 @@
 		8EB3738A2527649700B9B3C0 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		8ED747C126E268C500EDE5FB /* Extension+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
 		8EF9EA04251B690C00D239C4 /* SK3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SK3DViewController.swift; sourceTree = "<group>"; };
+		E40ACE24273A653B00B4FFCE /* RemoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteController.swift; sourceTree = "<group>"; };
+		E40ACE2B273A671400B4FFCE /* HeadTiltServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadTiltServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40ACE2D273A671400B4FFCE /* HeadTiltServerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadTiltServerApp.swift; sourceTree = "<group>"; };
+		E40ACE2F273A671400B4FFCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E40ACE31273A671500B4FFCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E40ACE34273A671500B4FFCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E40ACE36273A671500B4FFCE /* HeadTiltServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeadTiltServer.entitlements; sourceTree = "<group>"; };
+		E40ACE3B273A671500B4FFCE /* HeadTiltServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadTiltServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40ACE3F273A671500B4FFCE /* HeadTiltServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadTiltServerTests.swift; sourceTree = "<group>"; };
+		E40ACE45273A671500B4FFCE /* HeadTiltServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadTiltServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40ACE49273A671500B4FFCE /* HeadTiltServerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadTiltServerUITests.swift; sourceTree = "<group>"; };
+		E40ACE4B273A671500B4FFCE /* HeadTiltServerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadTiltServerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E40ACE56273A674D00B4FFCE /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		E40ACE58273A6CE200B4FFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E40ACE59273A73B100B4FFCE /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8E4A85D2251A37600077CDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40ACE28273A671400B4FFCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40ACE38273A671500B4FFCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40ACE42273A671500B4FFCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				8E4A85D7251A37600077CDAC /* AirPodsProMotion */,
+				E40ACE2C273A671400B4FFCE /* HeadTiltServer */,
+				E40ACE3E273A671500B4FFCE /* HeadTiltServerTests */,
+				E40ACE48273A671500B4FFCE /* HeadTiltServerUITests */,
 				8E4A85D6251A37600077CDAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				8E4A85D5251A37600077CDAC /* AirPodsProMotion.app */,
+				E40ACE2B273A671400B4FFCE /* HeadTiltServer.app */,
+				E40ACE3B273A671500B4FFCE /* HeadTiltServerTests.xctest */,
+				E40ACE45273A671500B4FFCE /* HeadTiltServerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +135,7 @@
 		8E4A85D7251A37600077CDAC /* AirPodsProMotion */ = {
 			isa = PBXGroup;
 			children = (
+				E40ACE24273A653B00B4FFCE /* RemoteController.swift */,
 				8EB3738A2527649700B9B3C0 /* TopViewController.swift */,
 				8E4A85DC251A37600077CDAC /* InformationViewController.swift */,
 				8EF9EA04251B690C00D239C4 /* SK3DViewController.swift */,
@@ -90,6 +160,46 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E40ACE2C273A671400B4FFCE /* HeadTiltServer */ = {
+			isa = PBXGroup;
+			children = (
+				E40ACE58273A6CE200B4FFCE /* Info.plist */,
+				E40ACE2D273A671400B4FFCE /* HeadTiltServerApp.swift */,
+				E40ACE2F273A671400B4FFCE /* ContentView.swift */,
+				E40ACE31273A671500B4FFCE /* Assets.xcassets */,
+				E40ACE36273A671500B4FFCE /* HeadTiltServer.entitlements */,
+				E40ACE33273A671500B4FFCE /* Preview Content */,
+				E40ACE56273A674D00B4FFCE /* Server.swift */,
+				E40ACE59273A73B100B4FFCE /* Connection.swift */,
+			);
+			path = HeadTiltServer;
+			sourceTree = "<group>";
+		};
+		E40ACE33273A671500B4FFCE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E40ACE34273A671500B4FFCE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E40ACE3E273A671500B4FFCE /* HeadTiltServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E40ACE3F273A671500B4FFCE /* HeadTiltServerTests.swift */,
+			);
+			path = HeadTiltServerTests;
+			sourceTree = "<group>";
+		};
+		E40ACE48273A671500B4FFCE /* HeadTiltServerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E40ACE49273A671500B4FFCE /* HeadTiltServerUITests.swift */,
+				E40ACE4B273A671500B4FFCE /* HeadTiltServerUITestsLaunchTests.swift */,
+			);
+			path = HeadTiltServerUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,17 +220,81 @@
 			productReference = 8E4A85D5251A37600077CDAC /* AirPodsProMotion.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E40ACE2A273A671400B4FFCE /* HeadTiltServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E40ACE4D273A671500B4FFCE /* Build configuration list for PBXNativeTarget "HeadTiltServer" */;
+			buildPhases = (
+				E40ACE27273A671400B4FFCE /* Sources */,
+				E40ACE28273A671400B4FFCE /* Frameworks */,
+				E40ACE29273A671400B4FFCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeadTiltServer;
+			productName = HeadTiltServer;
+			productReference = E40ACE2B273A671400B4FFCE /* HeadTiltServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E40ACE3A273A671500B4FFCE /* HeadTiltServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E40ACE50273A671500B4FFCE /* Build configuration list for PBXNativeTarget "HeadTiltServerTests" */;
+			buildPhases = (
+				E40ACE37273A671500B4FFCE /* Sources */,
+				E40ACE38273A671500B4FFCE /* Frameworks */,
+				E40ACE39273A671500B4FFCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E40ACE3D273A671500B4FFCE /* PBXTargetDependency */,
+			);
+			name = HeadTiltServerTests;
+			productName = HeadTiltServerTests;
+			productReference = E40ACE3B273A671500B4FFCE /* HeadTiltServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E40ACE44273A671500B4FFCE /* HeadTiltServerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E40ACE53273A671500B4FFCE /* Build configuration list for PBXNativeTarget "HeadTiltServerUITests" */;
+			buildPhases = (
+				E40ACE41273A671500B4FFCE /* Sources */,
+				E40ACE42273A671500B4FFCE /* Frameworks */,
+				E40ACE43273A671500B4FFCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E40ACE47273A671500B4FFCE /* PBXTargetDependency */,
+			);
+			name = HeadTiltServerUITests;
+			productName = HeadTiltServerUITests;
+			productReference = E40ACE45273A671500B4FFCE /* HeadTiltServerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8E4A85CD251A37600077CDAC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					8E4A85D4251A37600077CDAC = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					E40ACE2A273A671400B4FFCE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					E40ACE3A273A671500B4FFCE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E40ACE2A273A671400B4FFCE;
+					};
+					E40ACE44273A671500B4FFCE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E40ACE2A273A671400B4FFCE;
 					};
 				};
 			};
@@ -138,6 +312,9 @@
 			projectRoot = "";
 			targets = (
 				8E4A85D4251A37600077CDAC /* AirPodsProMotion */,
+				E40ACE2A273A671400B4FFCE /* HeadTiltServer */,
+				E40ACE3A273A671500B4FFCE /* HeadTiltServerTests */,
+				E40ACE44273A671500B4FFCE /* HeadTiltServerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +329,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E40ACE29273A671400B4FFCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40ACE35273A671500B4FFCE /* Preview Assets.xcassets in Resources */,
+				E40ACE32273A671500B4FFCE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40ACE39273A671500B4FFCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40ACE43273A671500B4FFCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -160,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EB3738B2527649700B9B3C0 /* TopViewController.swift in Sources */,
+				E40ACE25273A653B00B4FFCE /* RemoteController.swift in Sources */,
 				8E4A85DD251A37600077CDAC /* InformationViewController.swift in Sources */,
 				8E4A85D9251A37600077CDAC /* AppDelegate.swift in Sources */,
 				8E4A7F90255AFD9F00CC0C2D /* CSVWriter.swift in Sources */,
@@ -171,7 +372,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E40ACE27273A671400B4FFCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40ACE30273A671400B4FFCE /* ContentView.swift in Sources */,
+				E40ACE57273A674D00B4FFCE /* Server.swift in Sources */,
+				E40ACE2E273A671400B4FFCE /* HeadTiltServerApp.swift in Sources */,
+				E40ACE5A273A73B100B4FFCE /* Connection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40ACE37273A671500B4FFCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40ACE40273A671500B4FFCE /* HeadTiltServerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40ACE41273A671500B4FFCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40ACE4C273A671500B4FFCE /* HeadTiltServerUITestsLaunchTests.swift in Sources */,
+				E40ACE4A273A671500B4FFCE /* HeadTiltServerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E40ACE3D273A671500B4FFCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E40ACE2A273A671400B4FFCE /* HeadTiltServer */;
+			targetProxy = E40ACE3C273A671500B4FFCE /* PBXContainerItemProxy */;
+		};
+		E40ACE47273A671500B4FFCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E40ACE2A273A671400B4FFCE /* HeadTiltServer */;
+			targetProxy = E40ACE46273A671500B4FFCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8E4A85E3251A37610077CDAC /* LaunchScreen.storyboard */ = {
@@ -306,15 +548,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YXA6U83V29;
+				DEVELOPMENT_TEAM = V39ZWH4K9P;
 				INFOPLIST_FILE = AirPodsProMotion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.APPMotion;
+				PRODUCT_BUNDLE_IDENTIFIER = pickitup247;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,17 +570,180 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YXA6U83V29;
+				DEVELOPMENT_TEAM = V39ZWH4K9P;
 				INFOPLIST_FILE = AirPodsProMotion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.APPMotion;
+				PRODUCT_BUNDLE_IDENTIFIER = pickitup247;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E40ACE4E273A671500B4FFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = HeadTiltServer/HeadTiltServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeadTiltServer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HeadTiltServer/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pickitup247.HeadTiltServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E40ACE4F273A671500B4FFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = HeadTiltServer/HeadTiltServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeadTiltServer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HeadTiltServer/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pickitup247.HeadTiltServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E40ACE51273A671500B4FFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pickitup247.HeadTiltServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeadTiltServer.app/Contents/MacOS/HeadTiltServer";
+			};
+			name = Debug;
+		};
+		E40ACE52273A671500B4FFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pickitup247.HeadTiltServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeadTiltServer.app/Contents/MacOS/HeadTiltServer";
+			};
+			name = Release;
+		};
+		E40ACE54273A671500B4FFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pickitup247.HeadTiltServerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = HeadTiltServer;
+			};
+			name = Debug;
+		};
+		E40ACE55273A671500B4FFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pickitup247.HeadTiltServerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = HeadTiltServer;
 			};
 			name = Release;
 		};
@@ -356,6 +764,33 @@
 			buildConfigurations = (
 				8E4A85EA251A37610077CDAC /* Debug */,
 				8E4A85EB251A37610077CDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E40ACE4D273A671500B4FFCE /* Build configuration list for PBXNativeTarget "HeadTiltServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40ACE4E273A671500B4FFCE /* Debug */,
+				E40ACE4F273A671500B4FFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E40ACE50273A671500B4FFCE /* Build configuration list for PBXNativeTarget "HeadTiltServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40ACE51273A671500B4FFCE /* Debug */,
+				E40ACE52273A671500B4FFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E40ACE53273A671500B4FFCE /* Build configuration list for PBXNativeTarget "HeadTiltServerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40ACE54273A671500B4FFCE /* Debug */,
+				E40ACE55273A671500B4FFCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
